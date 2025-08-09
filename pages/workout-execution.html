@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executar Treino - SuperHeavy</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/workout-execution.css">
+</head>
+<body>
+    <div class="container">
+        <header class="workout-header">
+            <a href="../index.html" class="back-button">← Log Workout</a>
+            <button class="finish-button">Finish</button>
+        </header>
+        
+        <div class="workout-info">
+            <p class="workout-stats">2min 32s • 1895 kg • 6</p>
+            <!-- TODO: Implementar timer funcional com CSS animations -->
+        </div>
+        
+        <main class="exercises-container">
+            <!-- Exercício 1 - Bench Press -->
+            <div class="exercise-card">
+                <div class="exercise-header">
+                    <div class="exercise-title">
+                        <span class="exercise-icon">🏋️</span>
+                        <h3>Bench Press (Barbell)</h3>
+                        <button class="exercise-menu">⋮</button>
+                    </div>
+                </div>
+                
+                <!-- Timer de descanso -->
+                <div class="rest-timer">
+                    <span class="timer-icon">⏱️</span>
+                    <span>Rest Timer: 2min 30s</span>
+                </div>
+                
+                <!-- Tabela de séries -->
+                <div class="sets-table">
+                    <div class="sets-header">
+                        <span>SET</span>
+                        <span>PREVIOUS</span>
+                        <span>KG</span>
+                        <span>REPS</span>
+                        <span></span>
+                    </div>
+                    
+                    <!-- TODO: Implementar as séries exatamente como no Hevy -->
+                    <div class="set-row completed">
+                        <span class="set-type">W</span>
+                        <span class="previous">20kg x 20</span>
+                        <span class="weight">60</span>
+                        <span class="reps">5</span>
+                        <span class="check">✓</span>
+                    </div>
+                    
+                    <div class="set-row completed">
+                        <span class="set-type">1</span>
+                        <span class="previous">80kg x 5</span>
+                        <span class="weight">80</span>
+                        <span class="reps">7</span>
+                        <span class="check">✓</span>
+                    </div>
+                    
+                    <!-- TODO: Implementar mais séries -->
+                    <!-- TODO: Adicionar estados diferentes (completado, atual, próximo) -->
+                </div>
+                
+                <button class="add-set-button">+ Add Set</button>
+            </div>
+            
+            <!-- TODO: Adicionar mais exercícios -->
+            <!-- TODO: Implementar scroll infinito -->
+            
+        </main>
+        
+        <!-- TODO: Implementar timer de progresso na parte inferior -->
+        <div class="workout-progress">
+            <div class="progress-bar"></div>
+            <button class="skip-button">Skip</button>
+        </div>
+    </div>
+</body>
+</html>

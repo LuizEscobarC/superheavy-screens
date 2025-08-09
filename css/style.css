@@ -1,0 +1,46 @@
+/* CSS básico - MUITA COISA PARA VOCÊ IMPLEMENTAR! */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    /* TODO: Implementar as cores do Hevy aqui */
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    /* TODO: Fazer responsivo para diferentes tamanhos */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    /* TODO: Estilizar melhor o header */
+}
+
+.navigation {
+    /* TODO: Criar layout dos botões de navegação */
+}
+
+.nav-button {
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    /* TODO: Estilizar como cards do Hevy */
+    /* TODO: Adicionar hover effects */
+    /* TODO: Implementar cores corretas */
+}
+
+/* TODO: Implementar todo o sistema de cores do Hevy */
+/* TODO: Adicionar responsividade mobile-first */
+/* TODO: Criar animações e transições */

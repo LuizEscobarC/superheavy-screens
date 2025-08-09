@@ -1,0 +1,114 @@
+/* CSS para execução de treino - ESTRUTURA BÁSICA! */
+
+.workout-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    /* TODO: Implementar header exato do Hevy */
+}
+
+.back-button {
+    text-decoration: none;
+    color: blue;
+    /* TODO: Estilizar como no Hevy */
+}
+
+.finish-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    /* TODO: Implementar estilo exato do Hevy */
+}
+
+.workout-info {
+    text-align: center;
+    margin-bottom: 20px;
+    /* TODO: Implementar as estatísticas do treino */
+}
+
+.exercise-card {
+    background: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    /* TODO: Implementar sombras e layout exato do Hevy */
+}
+
+.exercise-header {
+    margin-bottom: 15px;
+    /* TODO: Implementar layout do header do exercício */
+}
+
+.exercise-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* TODO: Ajustar espaçamento e alinhamento */
+}
+
+.rest-timer {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    /* TODO: Implementar timer visual como no Hevy */
+}
+
+.sets-table {
+    /* TODO: Implementar tabela de séries EXATAMENTE como no Hevy */
+}
+
+.sets-header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    gap: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    /* TODO: Implementar header da tabela */
+}
+
+.set-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 8px 0;
+    /* TODO: Implementar estados das séries (completed, current, next) */
+}
+
+.set-row.completed {
+    background-color: lightgreen;
+    /* TODO: Implementar cor verde exata do Hevy */
+}
+
+.add-set-button {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px dashed #ccc;
+    color: blue;
+    /* TODO: Implementar estilo exato do botão Add Set */
+}
+
+.workout-progress {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    /* TODO: Implementar barra de progresso do Hevy */
+}
+
+/* MUITAS COISAS PARA IMPLEMENTAR: */
+/* TODO: Cores exatas do Hevy (#007AFF, #34C759, etc.) */
+/* TODO: Typography e font-weights corretos */
+/* TODO: Estados visuais das séries (W, números, F) */
+/* TODO: Animações de timer */
+/* TODO: Responsividade mobile */
+/* TODO: Sombras e elevações dos cards */
+/* TODO: Layout da tabela de séries perfeito */
+/* TODO: Estados hover e focus */

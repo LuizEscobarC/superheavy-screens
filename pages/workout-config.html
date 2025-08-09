@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurar Treino - SuperHeavy</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/workout-config.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="back-button">← Voltar</a>
+            <h1>Configurar Treino</h1>
+        </header>
+        
+        <main>
+            <form class="workout-form">
+                <section class="workout-basic-info">
+                    <h2>Informações do Treino</h2>
+                    
+                    <!-- TODO: Estilizar estes inputs como no Hevy -->
+                    <div class="input-group">
+                        <label for="workout-name">Nome do Treino:</label>
+                        <input type="text" id="workout-name" name="workout-name" placeholder="Ex: Push Day">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="muscle-group">Grupo Muscular:</label>
+                        <select id="muscle-group" name="muscle-group">
+                            <option value="">Selecione...</option>
+                            <option value="chest">Peito</option>
+                            <option value="back">Costas</option>
+                            <option value="shoulders">Ombros</option>
+                            <option value="arms">Braços</option>
+                            <option value="legs">Pernas</option>
+                        </select>
+                    </div>
+                </section>
+                
+                <section class="exercises-section">
+                    <h2>Exercícios</h2>
+                    
+                    <!-- Exercício 1 - Exemplo básico -->
+                    <div class="exercise-card">
+                        <h3>Exercício 1</h3>
+                        <!-- TODO: Criar layout que pareça com os cards do Hevy -->
+                        
+                        <div class="exercise-inputs">
+                            <input type="text" placeholder="Nome do exercício">
+                            
+                            <div class="exercise-details">
+                                <input type="number" placeholder="Peso (kg)">
+                                <input type="number" placeholder="Repetições">
+                                <input type="number" placeholder="Séries">
+                                <input type="number" placeholder="Descanso (seg)">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- TODO: Adicionar mais exercícios dinamicamente -->
+                    <!-- TODO: Botão para adicionar novos exercícios -->
+                    
+                </section>
+                
+                <!-- TODO: Botão de salvar estilizado -->
+                <button type="submit" class="save-button">Salvar Treino</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

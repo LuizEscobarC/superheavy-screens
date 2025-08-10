@@ -1,3 +1,1 @@
-hello world
-hi
-hi 2
+Criei as variáveis CSS com as cores exatas do Hevy

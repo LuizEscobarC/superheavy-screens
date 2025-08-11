@@ -5,6 +5,40 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    /* Paleta Base */
+    --cor-primaria: #000000;
+    --cor-secundaria: #1C1C1E;
+
+    /* Cores de texto */
+    --cor-texto-base: #FFFFFF;
+    --cor-texto-informacao: #148DEA;
+    --cor-texto-suporte: #8B8C90;
+    --cor-texto-descartar: #df4a40;
+    --cor-texto-W: #F3B70B;
+    --cor-texto-D: #40B7F9;
+    --cor-texto-F: #E94F37;
+    --cor-texto-X: #CF553E;
+
+    /* cores botoes */
+    --cor-botao-execucao: #008CFF;
+    --cor-botao-apoio: #1C1C1E;
+    --cor-botao-confirmacao: #2C2C2E;
+    --cor-botao-pro: #FFDE00;
+    --cor-botao-comecar: #2D4257;
+    --cor-botao-check: #83888E;
+
+    /* cores hover */
+    --cor-hover-execucao: #001C32;
+    --cor-hover-apoio: #050505;     /* quando selecionado algum botão de apoio */
+    --cor-hover-comecar: #090C11;   /* quando selecionado algum botão de comecar introdução */
+    --cor-hover-selecao: #008CFF;   /* quando selecionado alguma aba */ 
+    --cor-check: #2C6111;
+    --cor-check-icone: #57BB23;
+
+
+    
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -16,6 +50,7 @@ body {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
+    
     /* TODO: Fazer responsivo para diferentes tamanhos */
 }
 
@@ -32,10 +67,8 @@ header {
 .nav-button {
     display: block;
     text-decoration: none;
-    color: black;
     margin-bottom: 20px;
     padding: 20px;
-    border: 1px solid #ccc;
     /* TODO: Estilizar como cards do Hevy */
     /* TODO: Adicionar hover effects */
     /* TODO: Implementar cores corretas */

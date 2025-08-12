@@ -1,4 +1,10 @@
 /* CSS básico - MUITA COISA PARA VOCÊ IMPLEMENTAR! */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+}
+
 
 * {
     margin: 0;
@@ -35,14 +41,13 @@
     --cor-hover-selecao: #008CFF;   /* quando selecionado alguma aba */ 
     --cor-check: #2C6111;
     --cor-check-icone: #57BB23;
-
-
+    
     
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: var(--cor-primaria);
     /* TODO: Implementar as cores do Hevy aqui */
 }
 
@@ -54,24 +59,91 @@ body {
     /* TODO: Fazer responsivo para diferentes tamanhos */
 }
 
-header {
+.cabecalho {
     text-align: center;
     margin-bottom: 30px;
     /* TODO: Estilizar melhor o header */
 }
 
+.cabecalho-title {
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+    color: var(--cor-texto-base);
+}
+
+.cabecalho-subtitle {
+    font-size: 1.1rem;
+    color: var(--cor-texto-suporte);
+}
+
 .navigation {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    font-size: 1rem;
     /* TODO: Criar layout dos botões de navegação */
 }
 
 .nav-button {
     display: block;
+    background-color: var(--cor-botao-apoio);
     text-decoration: none;
+    text-align: center;
+    color: var(--cor-texto-base);
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 12px 0px;
+    width: 180px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    transition: var(--cor-primaria) 0.3s ease;
     /* TODO: Estilizar como cards do Hevy */
     /* TODO: Adicionar hover effects */
     /* TODO: Implementar cores corretas */
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.exercise-card {
+    padding: 15px;
+}
+
+.exercise-card-header {
+
+}
+
+.exercise-title {
+    color: var(--cor-texto-base);
+    font-size: 1.1rem;
+}
+
+.exercise-type {
+    color: var(--cor-texto-base);
+    font-size: 0.8rem;
+    padding: 2px 8px;
+}
+
+.exercise-desc {
+    color: var(--cor-texto-base);
+    font-size: 0.8rem;
+}
+
+.exercise-footer {
+
+}
+
+.stats {
+color: var(--cor-texto-base);
+font-size: 0.8rem;
+}
+
+.action-button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
 }
 
 /* TODO: Implementar todo o sistema de cores do Hevy */

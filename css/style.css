@@ -64,16 +64,29 @@ header {
     /* TODO: Criar layout dos botões de navegação */
 }
 
+
+
 .nav-button {
+    background-color: var(--cor-botao-check);
+    color: var(--cor-texto-base);
     display: block;
     text-decoration: none;
     margin-bottom: 20px;
     padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
     /* TODO: Estilizar como cards do Hevy */
     /* TODO: Adicionar hover effects */
     /* TODO: Implementar cores corretas */
 }
 
+.nav-button:hover {
+    background-color: var(--cor-botao-apoio);
+    transform: scale(1.02);
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4); /* efeito visual sem afetar outros botões */
+}
 /* TODO: Implementar todo o sistema de cores do Hevy */
 /* TODO: Adicionar responsividade mobile-first */
 /* TODO: Criar animações e transições */

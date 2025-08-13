@@ -1,6 +1,7 @@
 /* CSS para execução de treino - ESTRUTURA BÁSICA! */
 
 .workout-header {
+    background-color: var(--cor-secundaria);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,13 +11,13 @@
 
 .back-button {
     text-decoration: none;
-    color: blue;
+    color: var(--cor-texto-base);
     /* TODO: Estilizar como no Hevy */
 }
 
 .finish-button {
-    background-color: blue;
-    color: white;
+    background-color: var(--cor-botao-execucao);
+    color: var(--cor-texto-base);
     border: none;
     padding: 8px 16px;
     border-radius: 4px;
@@ -30,14 +31,22 @@
 }
 
 .exercise-card {
-    background: white;
+    background: var(--cor-secundaria);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     margin-bottom: 20px;
-    padding: 15px;
+    padding: 16px;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
     /* TODO: Implementar sombras e layout exato do Hevy */
 }
 
 .exercise-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 15px;
     /* TODO: Implementar layout do header do exercício */
 }
@@ -49,46 +58,110 @@
     /* TODO: Ajustar espaçamento e alinhamento */
 }
 
+.exercise-name {
+    color: var(--cor-texto-informacao);
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.exercise-menu {
+    background: none;
+    border: none;
+    color: var(--cor-texto-suporte);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.timer-icon {
+    color: var(--cor-texto-informacao);
+    font-size: 1.5rem;
+}
+
+.timer-pause {
+    color: var(--cor-texto-informacao);
+}
+
 .rest-timer {
-    background-color: #f0f0f0;
-    padding: 10px;
-    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--cor-primaria);
+    font-size: 0.9rem;
+    padding: 6px 10px;
+    border-radius: 8px;
     margin-bottom: 15px;
     /* TODO: Implementar timer visual como no Hevy */
 }
 
 .sets-table {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
     /* TODO: Implementar tabela de séries EXATAMENTE como no Hevy */
 }
 
 .sets-header {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    grid-template-columns: 40px 1fr 50px 50px 30px;
+    padding: 6px 0;
     gap: 10px;
     font-weight: bold;
     margin-bottom: 10px;
     /* TODO: Implementar header da tabela */
 }
 
+.sets-info {
+    color: var(--cor-texto-suporte);
+}
+
 .set-row {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    grid-template-columns: 40px 1fr 50px 50px 30px;
+    align-items: center;
     gap: 10px;
-    padding: 8px 0;
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
     /* TODO: Implementar estados das séries (completed, current, next) */
 }
 
 .set-row.completed {
-    background-color: lightgreen;
+    background-color: var(--cor-botao-apoio);
+    color: var(--cor-texto-base);
     /* TODO: Implementar cor verde exata do Hevy */
 }
 
+.set-row.current {
+    background-color: var(--cor-botao-apoio);
+    color: var(--cor-texto-base);
+}
+
+.set-row.next {
+    color: var(--cor-texto-suporte);
+}
+
+/* tipos W,D,F,X */
+
+.set-type.W{ color: var(--cor-texto-W);}
+.set-type.D{ color: var(--cor-texto-D);}
+.set-type.F{ color: var(--cor-texto-F);}
+.set-type.X{ color: var(--cor-texto-X);}
+
+.check {
+    color: var(--cor-check-icone);
+}
+
 .add-set-button {
+    margin-top: 10px;
     width: 100%;
-    padding: 10px;
-    background-color: transparent;
-    border: 1px dashed #ccc;
-    color: blue;
+    padding: 8px 12px;
+    background-color: var(--cor-botao-execucao);
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--cor-texto-base);
+    align-self: flex-start;
+    transition: background 0.2s;
     /* TODO: Implementar estilo exato do botão Add Set */
 }
 
@@ -97,10 +170,24 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: white;
+    background: var(--cor-texto-base);
     padding: 10px;
     border-top: 1px solid #ccc;
     /* TODO: Implementar barra de progresso do Hevy */
+}
+
+@media (max-width: 480px) {
+    .exercise-card {
+        padding: 12px;
+    }
+
+    .exercise-name {
+        font-size: 1rem;
+    }
+    .sets-header, .set-row {
+        grid-template-columns: 30px 1fr 40px 40px 30px;
+        font-size: 0.8rem;
+    }
 }
 
 /* MUITAS COISAS PARA IMPLEMENTAR: */

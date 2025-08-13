@@ -20,7 +20,7 @@
     /* TODO: Implementar typography do Hevy */
 }
 
-.input-group input
+.input-group input,
 .input-group select {
     width: 100%;
     padding: 10px;
@@ -29,11 +29,11 @@
     /* TODO: Adicionar focus states */
 }
 
-.input-group input:focus
+.input-group input:focus,
 .input-group select:focus {
     outline: 2px solid var(--cor-botao-execucao); /* contorno azul */
     outline-offset: 2px;
-    background-color: var(--cor-secundaria);       /* muda leve fundo */
+    background-color: var(--cor-botao-check);       /* muda leve fundo */
     transition: all 0.2s ease-in-out;              /* animação suave */
 }
 
@@ -43,6 +43,28 @@
     margin-bottom: 20px;
     /* TODO: Transformar em card igual ao Hevy */
     /* TODO: Adicionar sombras e bordas arredondadas */
+}
+
+.exercise-inputs input {
+    width: 100%;
+    padding: 10px;
+    color: var(--cor-texto-base);
+    border: 1px solid var(--cor-botao-check);
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.exercise-inputs input:focus {
+    border-color: var(--cor-botao-execucao);
+    background-color: var(--cor-primaria);
+    box-shadow: 0 0 0 2px var(--cor-botao-execucao);
+}
+
+.exercise-details input {
+    padding: 8px;
+    text-align: center;
 }
 
 .exercise-details {

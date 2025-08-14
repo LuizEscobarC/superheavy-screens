@@ -29,6 +29,14 @@
     /* TODO: Adicionar focus states */
 }
 
+.input-group input:focus,
+.input-group select:focus {
+    outline: 2px solid var(--cor-botao-execucao); /* contorno azul */
+    outline-offset: 2px;
+    background-color: var(--cor-botao-check);       /* muda leve fundo */
+    transition: all 0.2s ease-in-out;              /* animação suave */
+}
+
 .exercise-card {
     border: 1px solid #ddd;
     padding: 20px;
@@ -37,6 +45,23 @@
     /* TODO: Adicionar sombras e bordas arredondadas */
 }
 
+.exercise-inputs input {
+    width: 100%;
+    padding: 10px;
+    color: var(--cor-texto-base);
+    border: 1px solid var(--cor-botao-check);
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+.exercise-inputs input:focus {
+    border-color: var(--cor-botao-execucao);
+    background-color: var(--cor-botao-check);
+    box-shadow: 0 0 0 1px var(--cor-botao-execucao);
+}
+
+
 .exercise-details {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -44,14 +69,26 @@
     /* TODO: Melhorar layout responsivo */
 }
 
+
+
 .save-button {
     width: 100%;
     padding: 15px;
     background-color: blue;
     color: white;
     border: none;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
     /* TODO: Implementar estilo de botão do Hevy */
     /* TODO: Adicionar hover e focus states */
+}
+
+.save-button:hover,
+.save-button:focus {
+    background-color: var(--cor-hover-comecar); 
+    transform: scale(1.02);                
+    cursor: pointer;                             
+    transition: all 0.2s ease-in-out;           
 }
 
 /* TODO: Implementar todo o resto! */

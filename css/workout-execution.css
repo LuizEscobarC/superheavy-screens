@@ -21,7 +21,19 @@
     border: none;
     padding: 8px 16px;
     border-radius: 4px;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
     /* TODO: Implementar estilo exato do Hevy */
+}
+
+.finish-button:hover {
+    background-color: var(--cor-botao-execucao);
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.finish-button:focus {
+    outline: 2px solid var(--cor-botao-execucao);
+    outline-offset: 2px;
 }
 
 .workout-info {
@@ -40,8 +52,16 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;                                
     /* TODO: Implementar sombras e layout exato do Hevy */
 }
+
+.exercise-card:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    transform: scale(1.02);
+}
+
+
 
 .exercise-header {
     display: flex;
@@ -153,6 +173,8 @@
 .add-set-button {
     margin-top: 10px;
     width: 100%;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
     padding: 8px 12px;
     background-color: var(--cor-botao-execucao);
     border-radius: 8px;
@@ -161,9 +183,20 @@
     cursor: pointer;
     color: var(--cor-texto-base);
     align-self: flex-start;
-    transition: background 0.2s;
-    /* TODO: Implementar estilo exato do botão Add Set */
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
+
+.add-set-button:hover {
+    background-color: var(--cor-hover-comecar);
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.add-set-button:focus {
+    outline: 2px solid var(--cor-botao-execucao);
+    outline-offset: 2px;
+}
+
 
 .workout-progress {
     position: fixed;

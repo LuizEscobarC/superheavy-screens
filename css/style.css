@@ -74,7 +74,7 @@ header {
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 10px;
-    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow → 0.2s ease-in-out;
     /* TODO: Estilizar como cards do Hevy */
     /* TODO: Adicionar hover effects */
     /* TODO: Implementar cores corretas */

@@ -53,19 +53,14 @@
     border-radius: 8px;
     font-size: 14px;
     outline: none;
-    transition: all 0.2s ease-in-out;
 }
 
 .exercise-inputs input:focus {
     border-color: var(--cor-botao-execucao);
-    background-color: var(--cor-primaria);
-    box-shadow: 0 0 0 2px var(--cor-botao-execucao);
+    background-color: var(--cor-botao-check);
+    box-shadow: 0 0 0 1px var(--cor-botao-execucao);
 }
 
-.exercise-details input {
-    padding: 8px;
-    text-align: center;
-}
 
 .exercise-details {
     display: grid;
@@ -74,22 +69,26 @@
     /* TODO: Melhorar layout responsivo */
 }
 
+
+
 .save-button {
     width: 100%;
     padding: 15px;
     background-color: blue;
     color: white;
     border: none;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
     /* TODO: Implementar estilo de botão do Hevy */
     /* TODO: Adicionar hover e focus states */
 }
 
 .save-button:hover,
 .save-button:focus {
-    background-color: var(--cor-hover-comecar); /* muda cor no hover/focus */
-    transform: translateY(-1px);                /* leve animação */
-    cursor: pointer;                             /* muda o cursor */
-    transition: all 0.2s ease-in-out;           /* animação suave */
+    background-color: var(--cor-hover-comecar); 
+    transform: scale(1.02);                
+    cursor: pointer;                             
+    transition: all 0.2s ease-in-out;           
 }
 
 /* TODO: Implementar todo o resto! */

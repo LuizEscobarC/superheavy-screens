@@ -31,10 +31,10 @@
 
 .input-group input:focus,
 .input-group select:focus {
-    outline: 2px solid var(--cor-botao-execucao); /* contorno azul */
+    outline: 2px solid var(--cor-botao-execucao); 
     outline-offset: 2px;
-    background-color: var(--cor-botao-check);       /* muda leve fundo */
-    transition: all 0.2s ease-in-out;              /* animação suave */
+    background-color: var(--cor-botao-check);
+    transition: all 0.2s ease-in-out;   
 }
 
 .exercise-card {

@@ -47,10 +47,10 @@ body {
 }
 
 .container {
-    max-width: 400px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 20px;
-    
+    padding left: 16px;
+    padding right: 16px;
     /* TODO: Fazer responsivo para diferentes tamanhos */
 }
 
@@ -67,7 +67,7 @@ header {
 
 
 .nav-button {
-    background-color: var(--cor-botao-check);
+    background-color: var(--cor-botao-apoio);
     color: var(--cor-texto-base);
     display: block;
     text-decoration: none;
@@ -81,12 +81,96 @@ header {
 }
 
 .nav-button:hover {
-    background-color: var(--cor-botao-apoio);
+    background-color: var(--cor-hover-apoio);
     transform: scale(1.02);
     cursor: pointer;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.4); /* efeito visual sem afetar outros botões */
 }
+
+@media (min-width: 480px) and (max-width: 768px) {
+    .container {
+        max-width: 600px;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        max-width: 900px;
+        padding: 24px;
+    }
+}
+
+@media (min-width: 1025) {
+    .container {
+        max-width: 1100px;
+        padding: 32px;
+    }
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.nav-button {
+    background-color: var(--cor-botao-apoio);
+    color: var(--cor-texto-base);
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.nav-button:hover {
+    background-color: var(--cor-hover-apoio);
+    transform: scale(1.02);
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.exercise-card {
+    background-color: var(--cor-secundaria);
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.exercise-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.sets-header, .set-row {
+    display: grid;
+    grid-template-columns: 70px 1fr 40px 50px 30px;
+    gap: 10px;
+    align-items: center;
+}
+
+@media (max-width: 480px) {
+    .sets-header, .set-row {
+        grid-template-columns: 30px 1fr 30px 30px 20px;
+        font-size: 0.8rem;
+    }
+
+    .exercise-card {
+        padding: 12px;
+    }
+
+    .exercise-name {
+        font-size: 1rem;
+    }
+}
+
 /* TODO: Implementar todo o sistema de cores do Hevy */
 /* TODO: Adicionar responsividade mobile-first */
 /* TODO: Criar animações e transições */

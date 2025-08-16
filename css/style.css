@@ -42,15 +42,16 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: var(--cor-primaria);
+    overflow-x: hidden;
     /* TODO: Implementar as cores do Hevy aqui */
 }
 
 .container {
-    max-width: 400px;
+    width: 100%;
+    max-width: 480px;
     margin: 0 auto;
-    padding: 20px;
-    
+    padding: 16px;
     /* TODO: Fazer responsivo para diferentes tamanhos */
 }
 
@@ -60,6 +61,18 @@ header {
     /* TODO: Estilizar melhor o header */
 }
 
+.title {
+    color: var(--cor-texto-base);
+}
+
+.subtitle {
+    color: var(--cor-texto-base);
+}
+
+.back-button {
+    color: var(--cor-texto-base);
+}
+
 .navigation {
     /* TODO: Criar layout dos botões de navegação */
 }
@@ -67,7 +80,7 @@ header {
 
 
 .nav-button {
-    background-color: var(--cor-botao-check);
+    background-color: var(--cor-botao-apoio);
     color: var(--cor-texto-base);
     display: block;
     text-decoration: none;
@@ -81,12 +94,117 @@ header {
 }
 
 .nav-button:hover {
-    background-color: var(--cor-botao-apoio);
+    background-color: var(--cor-hover-apoio);
     transform: scale(1.02);
     cursor: pointer;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.4); /* efeito visual sem afetar outros botões */
 }
+
+@media (min-width: 480px) and (max-width: 768px) {
+    .container {
+        max-width: 78.1vw;
+        padding: 2.6vw;
+        min-width: 48.8vh;
+    }
+    .sets-header, .set-row {
+        grid-template-columns: 15vw 1fr 10vw 10vw 8vw;
+
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        max-width: 70vw;
+        padding: 2vw;
+    }
+}
+
+@media (min-width: 1025) {
+    .container {
+        max-width: 60vw;
+        padding: 1.5vw;
+    }
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.nav-button {
+    background-color: var(--cor-botao-apoio);
+    color: var(--cor-texto-base);
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.nav-button:hover {
+    background-color: var(--cor-hover-apoio);
+    transform: scale(1.02);
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.exercise-card {
+    background-color: var(--cor-secundaria);
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.exercise-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.sets-header, .set-row {
+    display: grid;
+    grid-template-columns: 1.2fr 2fr 1fr 1fr 0.8fr;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 3vw;
+    }
+    .sets-header, .set-row {
+        grid-template-columns: 0.7fr 2fr 0.7fr 0.7fr 0.5fr;
+        font-size: 0.8rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .sets-header, .set-row {
+        grid-template-columns: 30px 1fr 30px 30px 20px;
+        font-size: 0.8rem;
+    }
+
+    .exercise-card {
+        padding: 12px;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    .exercise-name {
+        font-size: 1rem;
+    }
+}
+
 /* TODO: Implementar todo o sistema de cores do Hevy */
 /* TODO: Adicionar responsividade mobile-first */
 /* TODO: Criar animações e transições */

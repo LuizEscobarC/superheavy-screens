@@ -10,11 +10,17 @@
 }
 
 .input-group {
-    margin-bottom: 15px;
-    /* TODO: Estilizar inputs como no Hevy */
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 20px;
 }
 
 .input-group label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--cor-texto-base);
+    letter-spacing: 0.3px;
     display: block;
     margin-bottom: 5px;
     /* TODO: Implementar typography do Hevy */
@@ -22,19 +28,35 @@
 
 .input-group input,
 .input-group select {
+    background-color: var(--cor-botao-apoio);
+    color: var(--cor-texto-base);
+    font-size: 1rem;
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    /* TODO: Implementar estilo dos inputs do Hevy */
-    /* TODO: Adicionar focus states */
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    outline: none;
+    transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s;
+}
+
+
+.input-group input:hover,
+.input-group select:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.input-group input::placeholder,
+.input-group select:invalid {
+    color: var(--cor-texto-suporte); 
+    opacity: 0.7;                   
 }
 
 .input-group input:focus,
 .input-group select:focus {
-    outline: 2px solid var(--cor-botao-execucao); /* contorno azul */
+    outline: 2px solid var(--cor-botao-execucao); 
     outline-offset: 2px;
-    background-color: var(--cor-botao-check);       /* muda leve fundo */
-    transition: all 0.2s ease-in-out;              /* animação suave */
+    background-color: var(--cor-botao-check); 
+    transition: all 0.2s ease-in-out; 
 }
 
 .exercise-card {
@@ -45,20 +67,28 @@
     /* TODO: Adicionar sombras e bordas arredondadas */
 }
 
+
+.exercise-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
 .exercise-inputs input {
+    background-color:  var(--cor-botao-apoio);
     width: 100%;
     padding: 10px;
     color: var(--cor-texto-base);
-    border: 1px solid var(--cor-botao-check);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 8px;
     font-size: 14px;
     outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .exercise-inputs input:focus {
     border-color: var(--cor-botao-execucao);
     background-color: var(--cor-botao-check);
-    box-shadow: 0 0 0 1px var(--cor-botao-execucao);
+    box-shadow: 0 0 0 2px rgba(0, 140, 255, 0.3)
 }
 
 

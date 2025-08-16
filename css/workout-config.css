@@ -73,8 +73,6 @@
     flex-direction: column;
     gap: 12px;
 }
-
-
 .exercise-inputs input {
     background-color:  var(--cor-botao-apoio);
     width: 100%;

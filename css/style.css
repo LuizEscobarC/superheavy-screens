@@ -109,6 +109,7 @@ header {
     }
     .sets-header, .set-row {
         grid-template-columns: 15vw 1fr 10vw 10vw 8vw;
+
     }
 }
 
@@ -184,6 +185,13 @@ header {
         grid-template-columns: 0.7fr 2fr 0.7fr 0.7fr 0.5fr;
         font-size: 0.8rem;
         width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .sets-header, .set-row {
+        grid-template-columns: 30px 1fr 30px 30px 20px;
+        font-size: 0.8rem;
     }
 
     .exercise-card {

@@ -180,7 +180,7 @@
 /* tipos W,D,F,X */
 
 .set-type.W {
-     color: var(--cor-texto-W);
+    color: var(--cor-texto-W);
 }
 .set-type.D { 
     color: var(--cor-texto-D);

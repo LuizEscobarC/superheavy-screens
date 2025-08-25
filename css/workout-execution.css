@@ -254,32 +254,59 @@
         font-size: 0.8rem;
     }
 }
-
-
 .modal-content {
-    
+    border: 1px solid grey;
+    background-color: var();
+    border-radius: 20px;
     text-align: center;
+    justify-content: center;
+    padding: 10px 20px ;
     color: white;
     text-decoration: none;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
+    width: 420px;
 }
 .list-u {
     list-style: none;
+    background-color: var(--cor-secundaria);
+    border-radius: 20px;
     padding: 0;
-    border: 1px blue solid;
+    border: 1px var(--cor-secundaria);
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    
 }
 .title-P {
     color: white;
-    border: 1px solid red;
     font-size: 15px;
-    
+
 }
-.icon w {
-    text-align: left;
-    color: green;
+.icon{
+display: flex;
+justify-content: flex-start;
+padding: 0px 0px 0px 10px;
+}
+.icon-w {
+    color: var(--cor-texto-W);
+
+}
+.icon-n{ 
+    color: var(--cor-texto-base);
+}
+
+.icon-f{
+color: var(--cor-texto-F);
+}
+
+.icon-d{
+color: var(--cor-texto-D);
+}
+
+.icon-x{
+color: var(--cor-texto-X);
 }
 
 

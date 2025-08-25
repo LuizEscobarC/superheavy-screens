@@ -255,6 +255,34 @@
     }
 }
 
+
+.modal-content {
+    
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.list-u {
+    list-style: none;
+    padding: 0;
+    border: 1px blue solid;
+}
+.title-P {
+    color: white;
+    border: 1px solid red;
+    font-size: 15px;
+    
+}
+.icon w {
+    text-align: left;
+    color: green;
+}
+
+
 /* MUITAS COISAS PARA IMPLEMENTAR: */
 /* TODO: Cores exatas do Hevy (#007AFF, #34C759, etc.) */
 /* TODO: Typography e font-weights corretos */

@@ -254,6 +254,15 @@
         font-size: 0.8rem;
     }
 }
+
+.modal {
+display: flex;
+justify-content: center;
+
+
+
+}
+
 .modal-content {
     border: 1px solid grey;
     background-color: var();
@@ -267,28 +276,53 @@
     flex-direction: column;
     gap: 20px;
     width: 420px;
+    
 }
+
 .list-u {
+    
     list-style: none;
     background-color: var(--cor-secundaria);
     border-radius: 20px;
-    padding: 0;
+    padding: 10px 20px;
     border: 1px var(--cor-secundaria);
     display: flex;
     gap: 10px;
     flex-direction: column;
     
 }
+.list-u li {
+    display: flex;
+    justify-content: space-between;
+    ;
+}
 .title-P {
     color: white;
     font-size: 15px;
 
 }
-.icon{
-display: flex;
-justify-content: flex-start;
-padding: 0px 0px 0px 10px;
+
+.help{
+    border: gray solid 1px;
+    background-color: gray;
+    border-radius: 50%;
+    
+    
+    
 }
+
+
+.icon{
+padding-right: 15px;
+display: inline-flex;
+flex-direction: start;
+align-items: center;
+justify-content: center;
+width: 24px;
+height: 24px;
+font-weight: bold;
+}
+
 .icon-w {
     color: var(--cor-texto-W);
 

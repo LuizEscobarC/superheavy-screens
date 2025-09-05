@@ -73,8 +73,6 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   margin-bottom: 20px;
   transition: transform 0.25 ease, box-shadow 0.25 ease;
-  /* TODO: Transformar em card igual ao Hevy */
-  /* TODO: Adicionar sombras e bordas arredondadas */
 }
 
 .exercise-inputs {
@@ -104,7 +102,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
-  /* TODO: Melhorar layout responsivo */
 }
 
 .save-button {
@@ -118,8 +115,6 @@
   letter-spacing: 0.5px;
   transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out,
     box-shadow 0.25s ease;
-  /* TODO: Implementar estilo de botão do Hevy */
-  /* TODO: Adicionar hover e focus states */
 }
 
 .save-button:hover,
@@ -130,10 +125,3 @@
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
   transition: all 0.2s ease-in-out;
 }
-
-/* TODO: Implementar todo o resto! */
-/* - Cores do Hevy */
-/* - Responsividade */
-/* - Animações */
-/* - Estados de foco/hover */
-/* - Layout de cards */

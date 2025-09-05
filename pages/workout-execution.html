@@ -46,21 +46,35 @@
               <span class="sets-info">✓</span>
             </div>
 
-            <!-- TODO: Implementar as séries exatamente como no Hevy -->
-            <div class="set-row completed">
-              <span class="set-type">W</span>
-              <span class="previous">20kg x 20</span>
-              <span class="weight">60</span>
-              <span class="reps">5</span>
-              <span class="check">✓</span>
-            </div>
-
+            <!-- Linha única da série -->
+            <input type="checkbox" id="serie1" class="toggle-modal" />
             <div class="set-row current">
-              <span class="set-type">1</span>
+              <label for="serie1" class="set-type numero-serie">1</label>
               <span class="previous">80kg x 5</span>
               <span class="weight">80</span>
               <span class="reps">7</span>
               <span class="check">✓</span>
+            </div>
+
+            <!-- Modal que aparece ao clicar -->
+            <div class="modal">
+              <div class="modal-content">
+                <label for="serie1" class="opcao">
+                  <span class="set-type W">W</span> - Série de Aquecimento
+                </label>
+                <label for="serie1" class="opcao">
+                  <span class="set-type 1">1</span> - Série Normal
+                </label>
+                <label for="serie1" class="opcao">
+                  <span class="set-type F">F</span> - Série Falhada
+                </label>
+                <label for="serie1" class="opcao">
+                  <span class="set-type D">D</span> - Série Drop
+                </label>
+                <label for="serie1" class="opcao">
+                  <span class="set-type X">X</span> - Remover Série
+                </label>
+              </div>
             </div>
 
             <!-- TODO: Implementar mais séries -->

@@ -152,10 +152,7 @@ header {
   padding: 20px;
   border-radius: 10px;
   transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out,
-    box-shadow → 0.2s ease-in-out, filter 0.25s ease;
-  /* TODO: Estilizar como cards do Hevy */
-  /* TODO: Adicionar hover effects */
-  /* TODO: Implementar cores corretas */
+    box-shadow 0.2s ease-in-out, filter 0.25s ease;
 }
 
 .nav-button:hover {
@@ -165,7 +162,6 @@ header {
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   filter: brightness(1.1);
-  /* efeito visual sem afetar outros botões */
 }
 
 .nav-button:active {
@@ -279,4 +275,3 @@ header {
 
 /* TODO: Implementar todo o sistema de cores do Hevy */
 /* TODO: Adicionar responsividade mobile-first */
-/* TODO: Criar animações e transições */

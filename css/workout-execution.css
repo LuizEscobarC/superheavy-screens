@@ -9,7 +9,6 @@
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   margin-bottom: 10px;
-  /* TODO: Implementar header exato do Hevy */
 }
 
 .back-button {
@@ -17,7 +16,6 @@
   color: var(--cor-texto-base);
   font-weight: 500;
   transition: color 0.25 ease;
-  /* TODO: Estilizar como no Hevy */
 }
 
 .container {
@@ -36,7 +34,6 @@
   border-radius: 4px;
   font-weight: 600;
   transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
-  /* TODO: Implementar estilo exato do Hevy */
 }
 
 .finish-button:hover {
@@ -53,7 +50,6 @@
 .workout-info {
   text-align: center;
   margin-bottom: 20px;
-  /* TODO: Implementar as estatísticas do treino */
 }
 
 .exercise-card {
@@ -67,7 +63,6 @@
   gap: 12px;
   transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out,
     box-shadow 0.2s ease-in-out;
-  /* TODO: Implementar sombras e layout exato do Hevy */
 }
 
 .exercise-card:hover {
@@ -122,7 +117,6 @@
   padding: 6px 10px;
   border-radius: 8px;
   margin-bottom: 15px;
-  /* TODO: Implementar timer visual como no Hevy */
 }
 
 .sets-table {
@@ -130,7 +124,6 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
-  /* TODO: Implementar tabela de séries EXATAMENTE como no Hevy */
 }
 
 .sets-header {
@@ -142,12 +135,56 @@
   gap: 10px;
   font-weight: bold;
   margin-bottom: 10px;
-  /* TODO: Implementar header da tabela */
 }
 
 .sets-info {
   color: var(--cor-texto-suporte);
 }
+
+.toggle-modal {
+  display: none;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  bottom: 0; /* começa do fundo da tela */
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5); /* fundo semi-transparente */
+  justify-content: center;
+  align-items: flex-end; /* conteúdo fica na parte de baixo */
+}
+
+.toggle-modal:checked + .set-row + .modal {
+  display: flex;
+}
+
+/* Conteúdo do modal */
+.modal-content {
+  background: var(--cor-botao-apoio);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 100%;
+  min-height: 50%;
+}
+
+/* Opções do modal */
+.opcao {
+  padding: 10px;
+  background: gray;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* .opcao:hover {
+  background: black;
+} */
 
 .set-row {
   display: grid;
@@ -161,7 +198,6 @@
   padding-right: 0px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   transition: background-color 0.25s ease, box-shadow 0.25s ease;
-  /* TODO: Implementar estados das séries (completed, current, next) */
 }
 
 .set-row.completed {
@@ -169,7 +205,6 @@
   font-weight: 600;
   color: var(--cor-texto-base);
   transition: background-color 0.25s ease;
-  /* TODO: Implementar cor verde exata do Hevy */
 }
 
 .set-row.current {
@@ -179,14 +214,6 @@
   transition: background 0.2s ease, box-shadow 0.2 ease;
   color: var(--cor-texto-base);
 }
-
-/* .set-row.next {  ( nao foi encaixado no html, por nao ter na referencia do heavy)
-    background-color: transparent;
-    font-weight: 400;
-    color: var(--cor-texto-suporte);
-} */
-
-/* tipos W,D,F,X */
 
 .set-type.W {
   color: var(--cor-texto-W);
@@ -311,13 +338,3 @@
     gap: 6px;
   }
 }
-
-/* MUITAS COISAS PARA IMPLEMENTAR: */
-/* TODO: Cores exatas do Hevy (#007AFF, #34C759, etc.) */
-/* TODO: Typography e font-weights corretos */
-/* TODO: Estados visuais das séries (W, números, F) */
-/* TODO: Animações de timer */
-/* TODO: Responsividade mobile */
-/* TODO: Sombras e elevações dos cards */
-/* TODO: Layout da tabela de séries perfeito */
-/* TODO: Estados hover e focus */

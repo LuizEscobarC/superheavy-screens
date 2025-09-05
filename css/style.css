@@ -1,92 +1,84 @@
 /* CSS básico - MUITA COISA PARA VOCÊ IMPLEMENTAR! */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 :root {
-    /* Paleta Base */
-    --cor-primaria: #000000;
-    --cor-secundaria: #1C1C1E;
+  /* Paleta Base */
+  --cor-primaria: #000000;
+  --cor-secundaria: #1c1c1e;
 
-    /* Cores de texto */
-    --cor-texto-base: #FFFFFF;
-    --cor-texto-informacao: #148DEA;
-    --cor-texto-suporte: #8B8C90;
-    --cor-texto-descartar: #df4a40;
-    --cor-texto-W: #F3B70B;
-    --cor-texto-D: #40B7F9;
-    --cor-texto-F: #E94F37;
-    --cor-texto-X: #CF553E;
+  /* Cores de texto */
+  --cor-texto-base: #ffffff;
+  --cor-texto-informacao: #148dea;
+  --cor-texto-suporte: #8b8c90;
+  --cor-texto-descartar: #df4a40;
+  --cor-texto-W: #f3b70b;
+  --cor-texto-D: #40b7f9;
+  --cor-texto-F: #e94f37;
+  --cor-texto-X: #cf553e;
 
-    /* cores botoes */
-    --cor-botao-execucao: #008CFF;
-    --cor-botao-apoio: #1C1C1E;
-    --cor-botao-confirmacao: #2C2C2E;
-    --cor-botao-pro: #FFDE00;
-    --cor-botao-comecar: #2D4257;
-    --cor-botao-check: #83888E;
+  /* cores botoes */
+  --cor-botao-execucao: #008cff;
+  --cor-botao-apoio: #1c1c1e;
+  --cor-botao-confirmacao: #2c2c2e;
+  --cor-botao-pro: #ffde00;
+  --cor-botao-comecar: #2d4257;
+  --cor-botao-check: #83888e;
 
-    /* cores hover */
-    --cor-hover-execucao: #001C32;
-    --cor-hover-apoio: #050505;     /* quando selecionado algum botão de apoio */
-    --cor-hover-comecar: #090C11;   /* quando selecionado algum botão de comecar introdução */
-    --cor-hover-selecao: #008CFF;   /* quando selecionado alguma aba */ 
-    --cor-check: #2C6111;
-    --cor-check-icone: #57BB23;
-
-
-    
+  /* cores hover */
+  --cor-hover-execucao: #001c32;
+  --cor-hover-apoio: #050505; /* quando selecionado algum botão de apoio */
+  --cor-hover-comecar: #090c11; /* quando selecionado algum botão de comecar introdução */
+  --cor-hover-selecao: #008cff; /* quando selecionado alguma aba */
+  --cor-check: #2c6111;
+  --cor-check-icone: #57bb23;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    /* TODO: Implementar as cores do Hevy aqui */
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  /* TODO: Implementar as cores do Hevy aqui */
 }
 
 .container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    
-    /* TODO: Fazer responsivo para diferentes tamanhos */
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+
+  /* TODO: Fazer responsivo para diferentes tamanhos */
 }
 
 header {
-    text-align: center;
-    margin-bottom: 30px;
-    /* TODO: Estilizar melhor o header */
+  text-align: center;
+  margin-bottom: 30px;
+  /* TODO: Estilizar melhor o header */
 }
 
 .navigation {
-    /* TODO: Criar layout dos botões de navegação */
+  /* TODO: Criar layout dos botões de navegação */
 }
 
-
-
 .nav-button {
-    background-color: var(--cor-botao-check);
-    color: var(--cor-texto-base);
-    display: block;
-    text-decoration: none;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow → 0.2s ease-in-out;
-    /* TODO: Estilizar como cards do Hevy */
-    /* TODO: Adicionar hover effects */
-    /* TODO: Implementar cores corretas */
+  background-color: var(--cor-botao-check);
+  color: var(--cor-texto-base);
+  display: block;
+  text-decoration: none;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    box-shadow → 0.2s ease-in-out;
 }
 
 .nav-button:hover {
-    background-color: var(--cor-botao-apoio);
-    transform: scale(1.02);
-    cursor: pointer;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.4); /* efeito visual sem afetar outros botões */
+  background-color: var(--cor-botao-apoio);
+  transform: scale(1.02);
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 /* TODO: Implementar todo o sistema de cores do Hevy */
 /* TODO: Adicionar responsividade mobile-first */
-/* TODO: Criar animações e transições */

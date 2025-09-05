@@ -9,75 +9,89 @@
   </head>
   <body>
     <div class="container">
-        <header class="workout-header">
-            <a href="../index.html" class="back-button">↓ Treinamento</a>
-            <button class="finish-button">Concluir</button>
-        </header>
-        
-        <div class="workout-info">
-            <p class="workout-stats">2min 32s • 1895 kg • 6</p>
-            <!-- TODO: Implementar timer funcional com CSS animations -->
-        </div>
-        
-        <main class="exercises-container">
-            <!-- Exercício 1 - Bench Press -->
-            <div class="exercise-card">
-                <div class="exercise-header">
-                    <div class="exercise-title">
-                        <span class="exercise-icon">🏋️</span>
-                        <h3 class="exercise-name">Agachamento (Barra)</h3>
-                        <button class="exercise-menu">⋮</button>
-                    </div>
-                </div>
-                
-                <!-- Timer de descanso -->
-                <div class="rest-timer">
-                    <span class="timer-icon">⏱</span>
-                    <span class="timer-pause">Tempo de Descanso: DESATIVADO</span>
-                </div>
-                
-                <!-- Tabela de séries -->
-                <div class="sets-table">
-                    <div class="sets-header">
-                        <span class="sets-info">SÉRIE</span>
-                        <span class="sets-info">ANTERIOR</span>
-                        <span class="sets-info">KG</span>
-                        <span class="sets-info">REPS</span>
-                        <span class="sets-info">✓</span>
-                    </div>
-                    
-                    <!-- TODO: Implementar as séries exatamente como no Hevy -->
-                    <div class="set-row completed">
-                        <span class="set-type">W</span>
-                        <span class="previous">20kg x 20</span>
-                        <span class="weight">60</span>
-                        <span class="reps">5</span>
-                        <span class="check">✓</span>
-                    </div>
-                    
-                    <div class="set-row current">
-                        <span class="set-type">1</span>
-                        <span class="previous">80kg x 5</span>
-                        <span class="weight">80</span>
-                        <span class="reps">7</span>
-                        <span class="check">✓</span>
-                    </div>
-                  
-                    <!-- TODO: Implementar mais séries -->
-                    <!-- TODO: Adicionar estados diferentes (completado, atual, próximo) -->
-                </div>
-                
-                <button class="add-set-button">+ Add Set</button>
+      <header class="workout-header">
+        <a href="../index.html" class="back-button">↓ Treinamento</a>
+        <button class="finish-button">Concluir</button>
+      </header>
+
+      <div class="workout-info">
+        <p class="workout-stats">2min 32s • 1895 kg • 6</p>
+        <!-- TODO: Implementar timer funcional com CSS animations -->
+      </div>
+
+      <main class="exercises-container">
+        <!-- Exercício 1 - Bench Press -->
+        <div class="exercise-card">
+          <div class="exercise-header">
+            <div class="exercise-title">
+              <span class="exercise-icon">🏋️</span>
+              <h3 class="exercise-name">Agachamento (Barra)</h3>
+              <button class="exercise-menu">⋮</button>
             </div>
+          </div>
+
+          <!-- Timer de descanso -->
+          <div class="rest-timer">
+            <span class="timer-icon">⏱</span>
+            <span class="timer-pause">Tempo de Descanso: DESATIVADO</span>
+          </div>
+
+          <!-- Tabela de séries -->
+          <div class="sets-table">
+            <div class="sets-header">
+              <span class="sets-info">SÉRIE</span>
+              <span class="sets-info">ANTERIOR</span>
+              <span class="sets-info">KG</span>
+              <span class="sets-info">REPS</span>
+              <span class="sets-info">✓</span>
+            </div>
+
+            <!-- Linha única da série -->
+            <input type="checkbox" id="serie1" class="toggle-modal" />
+            <div class="set-row current">
+              <label for="serie1" class="set-type numero-serie">1</label>
+              <span class="previous">80kg x 5</span>
+              <span class="weight">80</span>
+              <span class="reps">7</span>
+              <span class="check">✓</span>
+            </div>
+
+            <!-- Modal que aparece ao clicar -->
+            <div class="modal">
+              <div class="modal-content">
+                <label for="serie1" class="opcao">
+                  <span class="set-type W">W</span> - Série de Aquecimento
+                </label>
+                <label for="serie1" class="opcao">
+                  <span class="set-type 1">1</span> - Série Normal
+                </label>
+                <label for="serie1" class="opcao">
+                  <span class="set-type F">F</span> - Série Falhada
+                </label>
+                <label for="serie1" class="opcao">
+                  <span class="set-type D">D</span> - Série Drop
+                </label>
+                <label for="serie1" class="opcao">
+                  <span class="set-type X">X</span> - Remover Série
+                </label>
+              </div>
+            </div>
+
+            <!-- TODO: Implementar mais séries -->
+            <!-- TODO: Adicionar estados diferentes (completado, atual, próximo) -->
+          </div>
+
+          <button class="add-set-button">+ Add Set</button>
+        </div>
         <!-- TODO: Adicionar mais exercícios -->
         <!-- TODO: Implementar scroll infinito -->
-        </main>
+      </main>
 
-        <!-- TODO: Implementar timer de progresso na parte inferior -->
-        <div class="workout-progress">
-            <div class="progress-bar"></div>
-            <button class="skip-button">Skip</button>
-        </div>
+      <!-- TODO: Implementar timer de progresso na parte inferior -->
+      <div class="workout-progress">
+        <div class="progress-bar"></div>
+        <button class="skip-button">Skip</button>
+      </div>
     </div>
   </body>
 </html>

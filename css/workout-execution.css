@@ -5,6 +5,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 12px 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     margin-bottom: 10px;
     /* TODO: Implementar header exato do Hevy */
 }
@@ -12,6 +15,8 @@
 .back-button {
     text-decoration: none;
     color: var(--cor-texto-base);
+    font-weight: 500;
+    transition: color 0.25 ease;
     /* TODO: Estilizar como no Hevy */
 }
 
@@ -29,6 +34,7 @@
     border: none;
     padding: 8px 16px;
     border-radius: 4px;
+    font-weight: 600;
     transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
     /* TODO: Implementar estilo exato do Hevy */
 }
@@ -94,6 +100,7 @@
     color: var(--cor-texto-suporte);
     font-size: 1.2rem;
     cursor: pointer;
+    transition: color 0.25s ease;
 }
 
 .timer-icon {
@@ -152,6 +159,7 @@
     padding-left: 0px;
     padding-right: 0px;
     border-bottom: 1px solid rgba(255,255,255,0.1);
+    transition: background-color 0.25s ease, box-shadow 0.25s ease;
     /* TODO: Implementar estados das séries (completed, current, next) */
 }
 
@@ -159,7 +167,7 @@
     background-color: var(--cor-check);
     font-weight: 600;    
     color: var(--cor-texto-base);
-    transition: background 0.2 ease;
+     transition: background-color 0.25s ease
     /* TODO: Implementar cor verde exata do Hevy */
 }
 

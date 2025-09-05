@@ -148,19 +148,18 @@
 .modal {
   display: none;
   position: fixed;
-  bottom: 0; /* começa do fundo da tela */
+  bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.5); /* fundo semi-transparente */
+  background: rgba(0, 0, 0, 0.5);
   justify-content: center;
-  align-items: flex-end; /* conteúdo fica na parte de baixo */
+  align-items: flex-end;
 }
 
 .toggle-modal:checked + .set-row + .modal {
   display: flex;
 }
 
-/* Conteúdo do modal */
 .modal-content {
   background: var(--cor-botao-apoio);
   padding: 20px;
@@ -172,7 +171,6 @@
   min-height: 50%;
 }
 
-/* Opções do modal */
 .opcao {
   padding: 10px;
   background: gray;
@@ -181,10 +179,6 @@
   text-align: center;
   cursor: pointer;
 }
-
-/* .opcao:hover {
-  background: black;
-} */
 
 .set-row {
   display: grid;

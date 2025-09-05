@@ -180,7 +180,7 @@
 /* tipos W,D,F,X */
 
 .set-type.W {
-     color: var(--cor-texto-W);
+    color: var(--cor-texto-W);
 }
 .set-type.D { 
     color: var(--cor-texto-D);
@@ -243,8 +243,7 @@
 
 @media (max-width: 480px) {
     .exercise-card {
-        padding: 12px;
-    }
+        padding: 12px;}
 
     .exercise-name {
         font-size: 1rem;
@@ -255,6 +254,79 @@
     }
 }
 
+
+.modal {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-content {
+    border: 1px solid grey;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 20px ;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 420px;
+    
+}
+
+.list-u {
+    list-style: none;
+    background-color: var(--cor-secundaria);
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: 1px var(--cor-secundaria);
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.list-u li {
+    display: flex;
+    justify-content: space-between;
+    ;
+}
+
+.title-P {
+    color: white;
+    font-size: 15px;
+}
+
+.help{
+    border: var(--cor-texto-suporte) 1px;
+    background-color: var(--cor-botao-apoio);
+    border-radius: 50%;
+}
+
+.icon{
+    padding-right: 15px;
+    display: inline-flex;
+    flex-direction: start;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    font-weight: bold;
+}
+.icon-w {
+    color: var(--cor-texto-W);
+}.icon-n{ 
+    color: var(--cor-texto-base);
+}
+.icon-f{
+    color: var(--cor-texto-F);
+}
+.icon-d{
+    color: var(--cor-texto-D);
+}
+.icon-x{
+    color: var(--cor-texto-X);
+}
 /* MUITAS COISAS PARA IMPLEMENTAR: */
 /* TODO: Cores exatas do Hevy (#007AFF, #34C759, etc.) */
 /* TODO: Typography e font-weights corretos */

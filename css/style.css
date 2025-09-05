@@ -144,11 +144,8 @@ header {
 }
 
 .navigation {
-    /* TODO: Criar layout dos botões de navegação */
+
 }
-
-
-
 .nav-button {
     background-color: var(--cor-botao-apoio);
     color: var(--cor-texto-base);

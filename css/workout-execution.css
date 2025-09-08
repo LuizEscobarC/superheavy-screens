@@ -161,20 +161,22 @@
 }
 
 .modal-content {
+  display: flex;
   background: var(--cor-botao-apoio);
   padding: 20px;
   border-radius: 10px;
-  display: flex;
   flex-direction: column;
-  gap: 10px;
-  min-width: 100%;
+  gap: 20px;
+  min-width: 50%;
   min-height: 50%;
 }
 
 .opcao {
+  display: flex;
   padding: 10px;
+  align-items: flex-start;
   background: gray;
-  color: #fff;
+  color: var(--cor-texto-base);
   border-radius: 5px;
   text-align: center;
   cursor: pointer;

@@ -157,7 +157,7 @@ header {
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 10px;
-    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow → 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow → 0.2s ease-in-out, filter 0.25s ease;
     /* TODO: Estilizar como cards do Hevy */
     /* TODO: Adicionar hover effects */
     /* TODO: Implementar cores corretas */
@@ -165,10 +165,17 @@ header {
 
 .nav-button:hover {
     background-color: var(--cor-hover-apoio);
-    transform: scale(1.02);
+    transform: scale(1.03); 
     cursor: pointer;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.4); /* efeito visual sem afetar outros botões */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    filter: brightness(1.1);
+    /* efeito visual sem afetar outros botões */
+}
+
+.nav-button:active {
+    transform: scale(0.97);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.4);
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
@@ -233,10 +240,6 @@ header {
     transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     max-width: 100%;
     overflow-x: auto;
-}
-
-.exercise-card:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .sets-header, .set-row {

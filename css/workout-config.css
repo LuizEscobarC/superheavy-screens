@@ -1,137 +1,134 @@
 /* CSS para tela de configuração - BÁSICO! */
 
 .workout-form {
-    /* TODO: Implementar layout responsivo */
+  /* TODO: Implementar layout responsivo */
 }
 
 .workout-basic-info {
-    margin-bottom: 30px;
-    background-color: var(--cor-secundaria);
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, .25);
-    transition: transform 0.25s ease, box-shadow 0.25 ease;
-    /* TODO: Estilizar como cards do Hevy */
+  margin-bottom: 30px;
+  background-color: var(--cor-secundaria);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.25s ease, box-shadow 0.25 ease;
+  /* TODO: Estilizar como cards do Hevy */
 }
 
 .input-group {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 20px;
 }
 
 .input-group label {
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: var(--cor-texto-base);
-    letter-spacing: 0.3px;
-    display: block;
-    margin-bottom: 5px;
-    /* TODO: Implementar typography do Hevy */
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--cor-texto-base);
+  letter-spacing: 0.3px;
+  display: block;
+  margin-bottom: 5px;
+  /* TODO: Implementar typography do Hevy */
 }
 
 .input-group input,
 .input-group select {
-    background-color: var(--cor-botao-apoio);
-    color: var(--cor-texto-base);
-    font-size: 1rem;
-    width: 100%;
-    padding: 12px 14px;
-    border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    outline: none;
-    transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s;
+  background-color: var(--cor-botao-apoio);
+  color: var(--cor-texto-base);
+  font-size: 1rem;
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  outline: none;
+  transition: border-color 0.2s ease, background-color 0.2s ease,
+    box-shadow 0.2s;
 }
-
 
 .input-group input:hover,
 .input-group select:hover {
-    border-color: rgba(255, 255, 255, 0.2);
-    filter: brightness(1.05);
+  border-color: rgba(255, 255, 255, 0.2);
+  filter: brightness(1.05);
 }
 
 .input-group input::placeholder,
 .input-group select:invalid {
-    color: var(--cor-texto-suporte); 
-    opacity: 0.7;                   
+  color: var(--cor-texto-suporte);
+  opacity: 0.7;
 }
 
 .input-group input:focus,
 .input-group select:focus {
-    outline: 2px solid var(--cor-botao-execucao); 
-    outline-offset: 2px;
-    background-color: var(--cor-botao-check); 
-    transition: all 0.2s ease-in-out; 
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  outline: 2px solid var(--cor-botao-execucao);
+  outline-offset: 2px;
+  background-color: var(--cor-botao-check);
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 }
 
 .exercise-card {
-    background-color: var(--cor-secundaria);
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, .25);
-    margin-bottom: 20px;
-    transition: transform 0.25 ease, box-shadow 0.25 ease;
-    /* TODO: Transformar em card igual ao Hevy */
-    /* TODO: Adicionar sombras e bordas arredondadas */
+  background-color: var(--cor-secundaria);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+  transition: transform 0.25 ease, box-shadow 0.25 ease;
+  /* TODO: Transformar em card igual ao Hevy */
+  /* TODO: Adicionar sombras e bordas arredondadas */
 }
-
 
 .exercise-inputs {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 .exercise-inputs input {
-    background-color:  var(--cor-botao-apoio);
-    width: 100%;
-    padding: 10px;
-    color: var(--cor-texto-base);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 8px;
-    font-size: 14px;
-    outline: none;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  background-color: var(--cor-botao-apoio);
+  width: 100%;
+  padding: 10px;
+  color: var(--cor-texto-base);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .exercise-inputs input:focus {
-    border-color: var(--cor-botao-execucao);
-    background-color: var(--cor-botao-check);
-    box-shadow: 0 0 0 3px rgba(0, 140, 255, 0.35)
+  border-color: var(--cor-botao-execucao);
+  background-color: var(--cor-botao-check);
+  box-shadow: 0 0 0 3px rgba(0, 140, 255, 0.35);
 }
-
 
 .exercise-details {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px;
-    /* TODO: Melhorar layout responsivo */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  /* TODO: Melhorar layout responsivo */
 }
 
-
-
 .save-button {
-    width: 100%;
-    padding: 15px;
-    background-color: var(--cor-botao-execucao);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.25s ease;
-    /* TODO: Implementar estilo de botão do Hevy */
-    /* TODO: Adicionar hover e focus states */
+  width: 100%;
+  padding: 15px;
+  background-color: var(--cor-botao-execucao);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    box-shadow 0.25s ease;
+  /* TODO: Implementar estilo de botão do Hevy */
+  /* TODO: Adicionar hover e focus states */
 }
 
 .save-button:hover,
 .save-button:focus {
-    background-color: var(--cor-hover-comecar); 
-    transform: scale(1.02);                
-    cursor: pointer;
-    box-shadow: 0 6px 14px rgba(0, 0, 0, .35);                             
-    transition: all 0.2s ease-in-out;           
+  background-color: var(--cor-hover-comecar);
+  transform: scale(1.02);
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+  transition: all 0.2s ease-in-out;
 }
 
 /* TODO: Implementar todo o resto! */

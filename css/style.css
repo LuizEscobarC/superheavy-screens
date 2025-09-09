@@ -1,281 +1,280 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* CSS básico - MUITA COISA PARA VOCÊ IMPLEMENTAR! */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 :root {
-    /* Paleta Base */
-    --cor-primaria: #000000;
-    --cor-secundaria: #1C1C1E;
+  /* Paleta Base */
+  --cor-primaria: #000000;
+  --cor-secundaria: #1c1c1e;
 
-    /* Cores de texto */
-    --cor-texto-base: #FFFFFF;
-    --cor-texto-informacao: #148DEA;
-    --cor-texto-suporte: #8B8C90;
-    --cor-texto-descartar: #df4a40;
-    --cor-texto-W: #F3B70B;
-    --cor-texto-D: #40B7F9;
-    --cor-texto-F: #E94F37;
-    --cor-texto-X: #CF553E;
+  /* Cores de texto */
+  --cor-texto-base: #ffffff;
+  --cor-texto-informacao: #148dea;
+  --cor-texto-suporte: #8b8c90;
+  --cor-texto-descartar: #df4a40;
+  --cor-texto-W: #f3b70b;
+  --cor-texto-D: #40b7f9;
+  --cor-texto-F: #e94f37;
+  --cor-texto-X: #cf553e;
 
-    /* fontes*/
-    --font-family: "Roboto", sans-serif;
+  /* fontes*/
+  --font-family: "Roboto", sans-serif;
 
-    /* tipografia */
-    --h1-size: 2rem;
-    --h1-weight: 700;
-    --h1-line-height: 1.3;
+  /* tipografia */
+  --h1-size: 2rem;
+  --h1-weight: 700;
+  --h1-line-height: 1.3;
 
-    --h2-size: 1.5rem;
-    --h2-weight: 600;
-    --h2-line-height: 1.4;
+  --h2-size: 1.5rem;
+  --h2-weight: 600;
+  --h2-line-height: 1.4;
 
-    --h3-size: 1.25rem;
-    --h3-weight: 600;
-    --h3-line-height: 1.4;
+  --h3-size: 1.25rem;
+  --h3-weight: 600;
+  --h3-line-height: 1.4;
 
-    --text-base-size: 1rem;
-    --text-weight: 400;
-    --text-line-height: 1.5;
+  --text-base-size: 1rem;
+  --text-weight: 400;
+  --text-line-height: 1.5;
 
-    --button-size: 1rem;
-    --button-weight: 600;
-    --button-line-height: 1.4;
+  --button-size: 1rem;
+  --button-weight: 600;
+  --button-line-height: 1.4;
 
+  /* cores botoes */
+  --cor-botao-execucao: #008cff;
+  --cor-botao-apoio: #1c1c1e;
+  --cor-botao-confirmacao: #2c2c2e;
+  --cor-botao-pro: #ffde00;
+  --cor-botao-comecar: #2d4257;
+  --cor-botao-check: #83888e;
 
-    /* cores botoes */
-    --cor-botao-execucao: #008CFF;
-    --cor-botao-apoio: #1C1C1E;
-    --cor-botao-confirmacao: #2C2C2E;
-    --cor-botao-pro: #FFDE00;
-    --cor-botao-comecar: #2D4257;
-    --cor-botao-check: #83888E;
-
-    /* cores hover */
-    --cor-hover-execucao: #001C32;
-    --cor-hover-apoio: #050505;     /* quando selecionado algum botão de apoio */
-    --cor-hover-comecar: #090C11;   /* quando selecionado algum botão de comecar introdução */
-    --cor-hover-selecao: #008CFF;   /* quando selecionado alguma aba */ 
-    --cor-check: #2C6111;
-    --cor-check-icone: #57BB23;
-
-
-    
+  /* cores hover */
+  --cor-hover-execucao: #001c32;
+  --cor-hover-apoio: #050505; /* quando selecionado algum botão de apoio */
+  --cor-hover-comecar: #090c11; /* quando selecionado algum botão de comecar introdução */
+  --cor-hover-selecao: #008cff; /* quando selecionado alguma aba */
+  --cor-check: #2c6111;
+  --cor-check-icone: #57bb23;
 }
 
 * {
-    font-family: var(--font-family);
+  font-family: var(--font-family);
 }
 
 body {
-    background-color: var(--cor-primaria);
-    overflow-x: hidden;
+  background-color: var(--cor-primaria);
+  overflow-x: hidden;
 
-    font-size: var(--text-base-size);
-    font-weight: var(--text-base-size);
-    line-height: var(--text-line-height);
-    color: var(--cor-texto-base);
-    /* TODO: Implementar as cores do Hevy aqui */
+  font-size: var(--text-base-size);
+  font-weight: var(--text-base-size);
+  line-height: var(--text-line-height);
+  color: var(--cor-texto-base);
+  /* TODO: Implementar as cores do Hevy aqui */
 }
 
 h1 {
-    font-size: var(--h1-size);
-    font-weight: var(--h1-weight);
-    line-height: var(--h1-line-height);
-    color: var(--cor-texto-base);
+  font-size: var(--h1-size);
+  font-weight: var(--h1-weight);
+  line-height: var(--h1-line-height);
+  color: var(--cor-texto-base);
 }
 
 h2 {
-    font-size: var(--h2-size);
-    font-weight: var(--h2-weight);
-    line-height: var(--h2-line-height);
-    color: var(--cor-texto-base);
+  font-size: var(--h2-size);
+  font-weight: var(--h2-weight);
+  line-height: var(--h2-line-height);
+  color: var(--cor-texto-base);
 }
 
 h3 {
-    font-size: var(--h3-size);
-    font-weight: var(--h3-weight);
-    line-height: var(--h3-line-height);
-    color: var(--cor-texto-base);
+  font-size: var(--h3-size);
+  font-weight: var(--h3-weight);
+  line-height: var(--h3-line-height);
+  color: var(--cor-texto-base);
 }
 
 p {
-    font-size: var(--text-base-size);
-    font-weight: var(--text-weight);
-    line-height: var(--text-line-height);
-    color: var(--cor-texto-base);
+  font-size: var(--text-base-size);
+  font-weight: var(--text-weight);
+  line-height: var(--text-line-height);
+  color: var(--cor-texto-base);
 }
 
 button {
-    font-size: var(--button-size);
-    font-weight: var(--button-weight);
-    line-height: var(--button-line-height);
-    color: var(--cor-texto-base);
+  font-size: var(--button-size);
+  font-weight: var(--button-weight);
+  line-height: var(--button-line-height);
+  color: var(--cor-texto-base);
 }
 
 .container {
-    width: 100%;
-    max-width: 480px;
-    margin: 0 auto;
-    padding: 16px;
-    /* TODO: Fazer responsivo para diferentes tamanhos */
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 16px;
+  /* TODO: Fazer responsivo para diferentes tamanhos */
 }
 
 header {
-    text-align: center;
-    margin-bottom: 30px;
-    /* TODO: Estilizar melhor o header */
+  text-align: center;
+  margin-bottom: 30px;
+  /* TODO: Estilizar melhor o header */
 }
 
 .title {
-    color: var(--cor-texto-base);
+  color: var(--cor-texto-base);
 }
 
 .subtitle {
-    color: var(--cor-texto-base);
+  color: var(--cor-texto-base);
 }
 
 .back-button {
-    color: var(--cor-texto-base);
+  color: var(--cor-texto-base);
 }
 
 .navigation {
-    /* TODO: Criar layout dos botões de navegação */
+  /* TODO: Criar layout dos botões de navegação */
 }
 
-
-
 .nav-button {
-    background-color: var(--cor-botao-apoio);
-    color: var(--cor-texto-base);
-    display: block;
-    text-decoration: none;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow → 0.2s ease-in-out, filter 0.25s ease;
-    /* TODO: Estilizar como cards do Hevy */
-    /* TODO: Adicionar hover effects */
-    /* TODO: Implementar cores corretas */
+  background-color: var(--cor-botao-apoio);
+  color: var(--cor-texto-base);
+  display: block;
+  text-decoration: none;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    box-shadow → 0.2s ease-in-out, filter 0.25s ease;
+  /* TODO: Estilizar como cards do Hevy */
+  /* TODO: Adicionar hover effects */
+  /* TODO: Implementar cores corretas */
 }
 
 .nav-button:hover {
-    background-color: var(--cor-hover-apoio);
-    transform: scale(1.03); 
-    cursor: pointer;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-    filter: brightness(1.1);
-    /* efeito visual sem afetar outros botões */
+  background-color: var(--cor-hover-apoio);
+  transform: scale(1.03);
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  filter: brightness(1.1);
+  /* efeito visual sem afetar outros botões */
 }
 
 .nav-button:active {
-    transform: scale(0.97);
-    box-shadow: 0 3px 8px rgba(0,0,0,0.4);
+  transform: scale(0.97);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
-    .container {
-        max-width: 78.1vw;
-        padding: 2.6vw;
-        min-width: 48.8vh;
-    }
-    .sets-header, .set-row {
-        grid-template-columns: 15vw 1fr 10vw 10vw 8vw;
-
-    }
+  .container {
+    max-width: 78.1vw;
+    padding: 2.6vw;
+    min-width: 48.8vh;
+  }
+  .sets-header,
+  .set-row {
+    grid-template-columns: 15vw 1fr 10vw 10vw 8vw;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    .container {
-        max-width: 70vw;
-        padding: 2vw;
-    }
+  .container {
+    max-width: 70vw;
+    padding: 2vw;
+  }
 }
 
 @media (min-width: 1025) {
-    .container {
-        max-width: 60vw;
-        padding: 1.5vw;
-    }
+  .container {
+    max-width: 60vw;
+    padding: 1.5vw;
+  }
 }
 
 .header {
-    text-align: center;
-    margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .navigation {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .nav-button {
-    background-color: var(--cor-botao-apoio);
-    color: var(--cor-texto-base);
-    display: block;
-    text-decoration: none;
-    padding: 20px;
-    border-radius: 10px;
+  background-color: var(--cor-botao-apoio);
+  color: var(--cor-texto-base);
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .nav-button:hover {
-    background-color: var(--cor-hover-apoio);
-    transform: scale(1.02);
-    cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  background-color: var(--cor-hover-apoio);
+  transform: scale(1.02);
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .exercise-card {
-    background-color: var(--cor-secundaria);
-    border-radius: 10px;
-    padding: 16px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  background-color: var(--cor-secundaria);
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.sets-header,
+.set-row {
+  display: grid;
+  grid-template-columns: 1.2fr 2fr 1fr 1fr 0.8fr;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 3vw;
+  }
+  .sets-header,
+  .set-row {
+    grid-template-columns: 0.7fr 2fr 0.7fr 0.7fr 0.5fr;
+    font-size: 0.8rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .sets-header,
+  .set-row {
+    grid-template-columns: 30px 1fr 30px 30px 20px;
+    font-size: 0.8rem;
+  }
+
+  .exercise-card {
+    padding: 12px;
     max-width: 100%;
     overflow-x: auto;
-}
+  }
 
-.sets-header, .set-row {
-    display: grid;
-    grid-template-columns: 1.2fr 2fr 1fr 1fr 0.8fr;
-    gap: 10px;
-    align-items: center;
-    width: 100%;
-}
-
-@media (max-width: 480px) {
-    .container {
-        padding: 3vw;
-    }
-    .sets-header, .set-row {
-        grid-template-columns: 0.7fr 2fr 0.7fr 0.7fr 0.5fr;
-        font-size: 0.8rem;
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .sets-header, .set-row {
-        grid-template-columns: 30px 1fr 30px 30px 20px;
-        font-size: 0.8rem;
-    }
-
-    .exercise-card {
-        padding: 12px;
-        max-width: 100%;
-        overflow-x: auto;
-    }
-
-    .exercise-name {
-        font-size: 1rem;
-    }
+  .exercise-name {
+    font-size: 1rem;
+  }
 }
 
 /* TODO: Implementar todo o sistema de cores do Hevy */

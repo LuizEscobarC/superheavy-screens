@@ -65,10 +65,13 @@
     box-shadow 0.2s ease-in-out;
 }
 
+<<<<<<< Updated upstream
 .exercise-card:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+=======
+>>>>>>> Stashed changes
 .exercise-header {
   display: flex;
   justify-content: space-between;
@@ -148,9 +151,9 @@
 .modal {
   display: none;
   position: fixed;
-  bottom: 0;
   left: 0;
   right: 0;
+  bottom: 65px;
   background: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: flex-end;
@@ -162,13 +165,15 @@
 
 .modal-content {
   display: flex;
+  position: fixed;
   background: var(--cor-botao-apoio);
   padding: 20px;
   border-radius: 10px;
+  margin-bottom: 280px;
   flex-direction: column;
   gap: 20px;
-  min-width: 50%;
-  min-height: 50%;
+  width: 25rem;
+  animation: slideFadeUp 0.3s ease-out forwards;
 }
 
 .opcao {
@@ -329,8 +334,19 @@
     font-size: 0.8rem;
   }
 
+<<<<<<< Updated upstream
   .progress-actions {
     flex-direction: column;
     gap: 6px;
+=======
+@keyframes slideFadeUp {
+  0% {
+    transform: translateY(50px); /* começa um pouco abaixo da posição final */
+    opacity: 0; /* invisível */
+  }
+  100% {
+    transform: translateY(0); /* chega na posição final */
+    opacity: 1; /* totalmente visível */
+>>>>>>> Stashed changes
   }
 }

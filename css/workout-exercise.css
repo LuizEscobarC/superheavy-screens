@@ -1,0 +1,74 @@
+/* ======================= */
+/* Scroll infinito         */
+/* ======================= */
+.exercises-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow-y: auto;
+  max-height: calc(100vh - 180px); /* deixa o conteúdo rolar sem sair da tela */
+  padding-right: 6px; /* espaço para não cortar scrollbar */
+}
+
+/* ======================= */
+/* Modal - Tipo de Séries  */
+/* ======================= */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* quando o checkbox está marcado, exibe o modal */
+.modal-toggle:checked ~ .modal-overlay {
+  display: flex;
+}
+
+.modal {
+  background: var(--cor-primaria);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.modal h3 {
+  margin-bottom: 15px;
+  color: var(--cor-texto-informacao);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.modal button,
+.modal .close-btn {
+  display: block;
+  margin-top: 10px;
+  background: var(--cor-botao-execucao);
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: var(--cor-texto-base);
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  text-align: center;
+}
+
+.modal button:hover,
+.modal .close-btn:hover {
+  background-color: var(--cor-hover-comecar);
+  transform: scale(1.02);
+}
+
+.modal button:focus,
+.modal .close-btn:focus {
+  outline: 2px solid var(--cor-botao-execucao);
+  outline-offset: 2px;
+}

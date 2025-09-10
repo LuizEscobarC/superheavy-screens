@@ -9,7 +9,6 @@
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   margin-bottom: 10px;
-  /* TODO: Implementar header exato do Hevy */
 }
 
 .back-button {
@@ -17,7 +16,6 @@
   color: var(--cor-texto-base);
   font-weight: 500;
   transition: color 0.25 ease;
-  /* TODO: Estilizar como no Hevy */
 }
 
 .container {
@@ -36,7 +34,6 @@
   border-radius: 4px;
   font-weight: 600;
   transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
-  /* TODO: Implementar estilo exato do Hevy */
 }
 
 .finish-button:hover {
@@ -53,7 +50,6 @@
 .workout-info {
   text-align: center;
   margin-bottom: 20px;
-  /* TODO: Implementar as estatísticas do treino */
 }
 
 .exercise-card {
@@ -67,13 +63,15 @@
   gap: 12px;
   transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out,
     box-shadow 0.2s ease-in-out;
-  /* TODO: Implementar sombras e layout exato do Hevy */
 }
 
+<<<<<<< Updated upstream
 .exercise-card:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+=======
+>>>>>>> Stashed changes
 .exercise-header {
   display: flex;
   justify-content: space-between;
@@ -122,7 +120,6 @@
   padding: 6px 10px;
   border-radius: 8px;
   margin-bottom: 15px;
-  /* TODO: Implementar timer visual como no Hevy */
 }
 
 .sets-table {
@@ -130,7 +127,6 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
-  /* TODO: Implementar tabela de séries EXATAMENTE como no Hevy */
 }
 
 .sets-header {
@@ -142,11 +138,53 @@
   gap: 10px;
   font-weight: bold;
   margin-bottom: 10px;
-  /* TODO: Implementar header da tabela */
 }
 
 .sets-info {
   color: var(--cor-texto-suporte);
+}
+
+.toggle-modal {
+  display: none;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 65px;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.toggle-modal:checked + .set-row + .modal {
+  display: flex;
+}
+
+.modal-content {
+  display: flex;
+  position: fixed;
+  background: var(--cor-botao-apoio);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 280px;
+  flex-direction: column;
+  gap: 20px;
+  width: 25rem;
+  animation: slideFadeUp 0.3s ease-out forwards;
+}
+
+.opcao {
+  display: flex;
+  padding: 10px;
+  align-items: flex-start;
+  background: gray;
+  color: var(--cor-texto-base);
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .set-row {
@@ -161,7 +199,6 @@
   padding-right: 0px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   transition: background-color 0.25s ease, box-shadow 0.25s ease;
-  /* TODO: Implementar estados das séries (completed, current, next) */
 }
 
 .set-row.completed {
@@ -169,7 +206,6 @@
   font-weight: 600;
   color: var(--cor-texto-base);
   transition: background-color 0.25s ease;
-  /* TODO: Implementar cor verde exata do Hevy */
 }
 
 .set-row.current {
@@ -179,14 +215,6 @@
   transition: background 0.2s ease, box-shadow 0.2 ease;
   color: var(--cor-texto-base);
 }
-
-/* .set-row.next {  ( nao foi encaixado no html, por nao ter na referencia do heavy)
-    background-color: transparent;
-    font-weight: 400;
-    color: var(--cor-texto-suporte);
-} */
-
-/* tipos W,D,F,X */
 
 .set-type.W {
   color: var(--cor-texto-W);
@@ -306,18 +334,19 @@
     font-size: 0.8rem;
   }
 
+<<<<<<< Updated upstream
   .progress-actions {
     flex-direction: column;
     gap: 6px;
+=======
+@keyframes slideFadeUp {
+  0% {
+    transform: translateY(50px); /* começa um pouco abaixo da posição final */
+    opacity: 0; /* invisível */
+  }
+  100% {
+    transform: translateY(0); /* chega na posição final */
+    opacity: 1; /* totalmente visível */
+>>>>>>> Stashed changes
   }
 }
-
-/* MUITAS COISAS PARA IMPLEMENTAR: */
-/* TODO: Cores exatas do Hevy (#007AFF, #34C759, etc.) */
-/* TODO: Typography e font-weights corretos */
-/* TODO: Estados visuais das séries (W, números, F) */
-/* TODO: Animações de timer */
-/* TODO: Responsividade mobile */
-/* TODO: Sombras e elevações dos cards */
-/* TODO: Layout da tabela de séries perfeito */
-/* TODO: Estados hover e focus */

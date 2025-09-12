@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercício - Super Heavy</title>
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/workout-exercise.css">
+    <link rel="stylesheet" href="../css/workout-exercise.css" />
   </head>
   <body>
     <div class="container">
       <header class="workout-header">
-        <a href="" class="back-button">↓ Treinamento</a>
+        <a href="../index.html" class="back-button">↓ Treinamento</a>
         <button class="finish-button">Concluir</button>
       </header>
 
@@ -22,79 +22,154 @@
         <div class="exercise-card">
           <div class="exercise-header">
             <div class="exercise-title">
-              <span class="exercise-icon">🏋️</span>
+              <img src="/assets/agachamento.png" alt="Agachamento" class="exercise-icon">
               <h3 class="exercise-name">Agachamento (barra)</h3>
-              <label for="modal-toggle-1" class="exercise-menu">⋮</label>
+              <button class="exercise-menu">⋮</button>
             </div>
           </div>
-        </div>
 
-        <div class="rest-timer">
-          <span class="timer-icon">⏱</span>
-          <span class="timer-pause">Descanso: DESATIVADO</span>
-        </div>
-
-        <div class="sets-table">
-          <div class="sets-header">
-            <span class="sets-info">SÉRIE</span>
-            <span class="sets-info">ANTERIOR</span>
-            <span class="sets-info">KG</span>
-            <span class="sets-info">REPS</span>
-            <span class="sets-info">✓</span>
+          <div class="notes">
+            <input type="text" placeholder="Adicionar notas aqui...">
           </div>
 
-          <div class="set-row completed">
-            <span class="set-type">2</span>
-            <span class="previous">65kg x 6</span>
-            <span class="weight">65</span>
-            <span class="reps">6</span>
-            <span class="check">✓</span>
-          </div>
-
-          <div class="exercise-card">
-            <div class="exercise-header">
-              <div class="exercise-title">
-                <span class="exercise-icon">⏳</span>
-                <h3 class="exercise-name">Prancha</h3>
-                <label for="modal-toggle-1" class="exercise-menu">⋮</label>
-              </div>
-            </div>
+          <div class="rest-timer">
+            <span class="timer-icon">⏱</span>
+            <span class="timer-pause">Descanso: DESATIVADO</span>
           </div>
 
           <div class="sets-table">
             <div class="sets-header">
               <span class="sets-info">SÉRIE</span>
-              <span class="sets-info">TEMPO</span>
+              <span class="sets-info">ANTERIOR</span>
+              <span class="sets-info">KG</span>
+              <span class="sets-info">REPS</span>
               <span class="sets-info">✓</span>
             </div>
 
-            <div class="set-row">
+            <div class="set-row completed">
               <span class="set-type">1</span>
-              <span class="timer">00:30</span>
-              <span class="check">-</span>
+              <span class="previous">65kg x 6</span>
+              <span class="weight">65</span>
+              <span class="reps">6</span>
+              <button class="check">✓</button>
             </div>
 
-            <div class="set-row">
+            <div class="set-row completed">
               <span class="set-type">2</span>
-              <span class="timer">00:45</span>
-              <span class="check">-</span>
+              <span class="previous">75kg x 5</span>
+              <span class="weight">75</span>
+              <span class="reps">5</span>
+              <button class="check">✓</button>
             </div>
 
             <div class="set-row">
               <span class="set-type">3</span>
-              <span class="timer">01:00</span>
-              <span class="check">-</span>
+              <span class="previous">75kg x 4</span>
+              <span class="weight">75</span>
+              <span class="reps">4</span>
+              <button class="check">✓</button>
             </div>
+
+            <div class="set-row">
+              <span class="set-type">4</span>
+              <span class="previous">70kg x 5</span>
+              <span class="weight">75</span>
+              <span class="reps">4</span>
+              <button class="check">✓</button>
+            </div>
+
+            <div class="set-row">
+              <span class="set-type">5</span>
+              <span class="previous">80kg x 3</span>
+              <span class="weight">80</span>
+              <span class="reps">3</span>
+              <button class="check">✓</button>
+            </div>
+          </div>
+
+          <div class="add-button">
+            <button>+ Adicionar Série</button>
           </div>
         </div>
 
         <div class="exercise-card">
           <div class="exercise-header">
             <div class="exercise-title">
-              <span class="exercise-icon">💪</span>
-              <h3 class="exercise-name">Rosca Direta</h3>
-              <label for="modal-toggle-1" class="exercise-menu">⋮</label>
+              <img src="/assets/prancha.png" alt="prancha" class="exercise-icon">
+              <h3 class="exercise-name">Prancha</h3>
+              <button class="exercise-menu">⋮</button>
             </div>
+          </div>
+
+          <div class="notes">
+            <input type="text" placeholder="Adicionar notas aqui...">
+          </div>
+
+          <div class="rest-timer">
+            <span class="timer-icon">⏱</span>
+            <span class="timer-pause">Descanso: DESATIVADO</span>
+          </div>
+
+          <div class="sets-table">
+            <div class="sets-header">
+              <span class="sets-info">SÉRIE</span>
+              <span class="sets-info">TEMPO</span>
+              <button class="check">✓</button>
+            </div>
+
+            <div class="set-row">
+              <span class="set-type">1</span>
+              <span class="timer">00:30</span>
+              <button class="check">✓</button>
+            </div>
+
+            <div class="set-row">
+              <span class="set-type">2</span>
+              <span class="timer">00:45</span>
+              <button class="check">✓</button>
+            </div>
+
+            <div class="set-row">
+              <span class="set-type">3</span>
+              <span class="timer">01:00</span>
+              <button class="check">✓</button>
+            </div>
+
+            <div class="set-row">
+              <span class="set-type">4</span>
+              <span class="timer">01:15</span>
+              <button class="check">✓</button>
+            </div>
+
+            <div class="set-row">
+              <span class="set-type">5</span>
+              <span class="timer">01:30</span>
+              <button class="check">✓</button>
+            </div>
+          </div>
+
+          <div class="add-button">
+            <button>+ Adicionar Série</button>
+          </div>
+
+        </div>
+
+        <div class="exercise-card">
+          <div class="exercise-header">
+            <div class="exercise-title">
+              <img src="/assets/rosca.png" alt="rosca direta" class="exercise-icon">
+              <h3 class="exercise-name">Rosca Direta</h3>
+              <button class="exercise-menu">⋮</button>
+            </div>
+          </div>
+
+          <div class="notes">
+            <input type="text" placeholder="Adicionar notas aqui...">
+          </div>
+
+          <div class="rest-timer">
+            <span class="timer-icon">⏱</span>
+            <span class="timer-pause">Descanso: DESATIVADO</span>
           </div>
 
           <div class="sets-table">
@@ -102,51 +177,71 @@
               <span class="sets-info">SÉRIE</span>
               <span class="sets-info">PESO</span>
               <span class="sets-info">REPS</span>
-              <span class="sets-info">✓</span>
+              <button class="check">✓</button>
             </div>
 
             <div class="set-row">
               <span class="set-type">1</span>
               <span class="weight">12kg</span>
               <span class="reps">10</span>
-              <span class="check">-</span>
+              <button class="check">✓</button>
             </div>
 
             <div class="set-row">
               <span class="set-type">2</span>
               <span class="weight">12kg</span>
               <span class="reps">10</span>
-              <span class="check">-</span>
+              <button class="check">✓</button>
             </div>
 
             <div class="set-row">
               <span class="set-type">3</span>
               <span class="weight">14kg</span>
               <span class="reps">8</span>
-              <span class="check">-</span>
+              <button class="check">✓</button>
             </div>
+
+            <div class="set-row">
+              <span class="set-type">4</span>
+              <span class="weight">14kg</span>
+              <span class="reps">8</span>
+              <button class="check">✓</button>
+            </div>
+
+            <div class="set-row">
+              <span class="set-type">5</span>
+              <span class="weight">16kg</span>
+              <span class="reps">6</span>
+              <button class="check">✓</button>
+            </div>
+          </div>
+
+          <div class="add-button">
+            <button>+ Adicionar Série</button>
+          </div>
+
         </div>
       </main>
 
       <div class="workout-progress">
         <div class="progress-bar">
-            <div class="progress-fil"></div>
+          <div class="progress-fil"></div>
         </div>
         <button class="skip-button">Skip</button>
       </div>
     </div>
 
-    <input type="checkbox" id="modal-toggle-1" class="modal-toggle" hidden/>
+   <!-- <input type="checkbox" id="modal-toggle-1" class="modal-toggle" hidden />
     <div class="modal-overlay">
-        <div class="modal">
-            <h3>Tipo de Série</h3>
-            <button>Warm-up</button>
-            <button>Drop Set</button>
-            <button>Failure</button>
-            <button>Normal</button>
-            <label for="modal-toggle-1" class="close-btn">Fechar</label>
-        </div>
+      <div class="modal">
+        <h3>Tipo de Série</h3>
+        <button>Série de Aquecimento</button>
+        <button>Série Normal</button>
+        <button>Série Falhada</button>
+        <button>Série Drop</button>
+        <button>Remover Série</button>
+        <label for="modal-toggle-1" class="close-btn">Fechar</label>
+      </div>-->
     </div>
-
   </body>
 </html>

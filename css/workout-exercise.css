@@ -147,6 +147,13 @@
   gap: 4px;
 }
 
+.sets-table {
+  background-color: var(--cor-primaria);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
 .sets-header {
   display: grid;
   grid-template-columns: 70px 1fr 75px 50px 30px;
@@ -176,6 +183,11 @@
   transition: background-color 0.25s ease, box-shadow 0.25s ease;
 }
 
+.sets-table.cols-4 .sets-header,
+.sets-table.cols-4 .set-row {
+  grid-template-columns: 60px 0.8fr 80px 30px;
+}
+
 .set-row.completed {
   background-color: var(--cor-check);
   font-weight: 600;
@@ -203,9 +215,6 @@
 
 .set-row.completed .check {
   background-color: var(--cor-check-icone);
-}
-
-.add-button {
 }
 
 /*.set-row.current {
@@ -251,7 +260,7 @@
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
   padding: 8px 12px;
-  background-color: var(--cor-botao-execucao);
+  background-color: var(--cor-botao-confirmacao);
   border-radius: 8px;
   border: none;
   font-weight: bold;

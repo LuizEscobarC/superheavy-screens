@@ -183,9 +183,29 @@
   transition: background-color 0.25s ease, box-shadow 0.25s ease;
 }
 
+.play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #007bff;
+  background-color: transparent;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.play:active {
+  transform: scale(0.9);
+}
+
 .sets-table.cols-4 .sets-header,
 .sets-table.cols-4 .set-row {
-  grid-template-columns: 60px 0.8fr 80px 30px;
+  grid-template-columns: 50px 1fr 0.7fr 40px;
 }
 
 .set-row.completed {
